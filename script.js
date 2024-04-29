@@ -14,7 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const taskList = document.getElementById('task-list');
 
     // Load tasks from localStorage on page load
-    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [{
+        title: 'Grocery Shopping',
+        description: 'Purchase ingredients for the week, including vegetables, fruits, protein sources, and pantry staples.',
+        completed: false
+      },
+      {
+        title: 'Exercise Routine',
+        description: 'Plan out a weekly exercise routine including cardio, strength training, and flexibility exercises.',
+        completed: false
+      }];
 
     // Render tasks
     function renderTasks() {
