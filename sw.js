@@ -3,7 +3,8 @@ const staticAssets = [
     '/',
     '/index.html',
     '/style.css',
-    '/script.js'
+    '/script.js',
+    '/assets/bootstrap.min.css'
 ];
 
 self.addEventListener('install', function (event) {
